@@ -1,5 +1,14 @@
+/* fonts  */
+body{
+    font-family: 'Inter', sans-serif;
+}
+/* input field inside card  */
 .input-field {
     width: 35%;
     background-color: #F1F1F1;
     border: none;
+}
+
+h4 {
+    font-weight: 700;
 }
