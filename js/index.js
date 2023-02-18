@@ -8,8 +8,9 @@ document.getElementById('triangle-calculate-btn').addEventListener('click', func
 
     // calculate the area 
     // area = 0.5 x b x h
-    const area = 0.5 * inputMultiply;
-
+    const areaRaw = 0.5 * inputMultiply;
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
     // display area to area calculation card 
     // return if input is invalid
     if(isNaN(area)){
@@ -24,8 +25,9 @@ document.getElementById('rectangle-calculate-btn').addEventListener('click', fun
     // multiply two inputs
     // calculate the area 
     // w x l
-    const area = multiplyInputs('rectangle-first-input', 'rectangle-second-input');
-
+    const areaRaw = multiplyInputs('rectangle-first-input', 'rectangle-second-input');
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
     // display area to area calculation card 
     // return if input is invalid
     if(isNaN(area)){
@@ -40,8 +42,9 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
     // multiply two inputs
     // calculate the area 
     // w x l
-    const area = multiplyInputs('parallelogram-first-input', 'parallelogram-second-input');
-
+    const areaRaw = multiplyInputs('parallelogram-first-input', 'parallelogram-second-input');
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
     // display area to area calculation card 
     // return if input is invalid
     if(isNaN(area)){
@@ -56,8 +59,9 @@ document.getElementById('rhombus-calculate-btn').addEventListener('click', funct
     // multiply two inputs
     // calculate the area 
     // w x l
-    const area = multiplyInputs('rhombus-first-input', 'rhombus-second-input');
-
+    const areaRaw = multiplyInputs('rhombus-first-input', 'rhombus-second-input');
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
     // display area to area calculation card 
     // return if input is invalid
     if(isNaN(area)){
@@ -75,8 +79,9 @@ document.getElementById('pentagon-calculate-btn').addEventListener('click', func
 
     // calculate the area 
     // area = 0.5 x p x b
-    const area = 0.5 * inputMultiply;
-
+    const areaRaw = 0.5 * inputMultiply;
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
     // display area to area calculation card 
     // return if input is invalid
     if(isNaN(area)){
@@ -91,10 +96,12 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
     // multiply two inputs
     // a x b
     const inputMultiply = multiplyInputs('ellipse-first-input', 'ellipse-second-input');
-
+    
     // calculate the area 
     // area = π x a x b
-    const area = 3.1416 * inputMultiply;
+    const areaRaw = 3.1416 * inputMultiply;
+    // fix output to two decimal number
+    const area = areaRaw.toFixed(2);
 
     // display area to area calculation card 
     // return if input is invalid
