@@ -116,3 +116,11 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
 document.getElementById('blog-btn').addEventListener('click',function () {
     window.location.href = '../blog.html'
 })
+
+//on mouse enter each card get a random color
+const cards = document.getElementsByClassName('geometry-card');
+for (const card of cards) {
+    card.addEventListener('mouseenter',function (event) {
+        event.target.style.backgroundColor = randomColor();
+    })
+}
