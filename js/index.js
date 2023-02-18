@@ -50,3 +50,19 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
     serial += 1;
     displayArea(serial,'Parallelogram',area);
 });
+
+// for Rhombus 
+document.getElementById('rhombus-calculate-btn').addEventListener('click', function () {
+    // multiply two inputs
+    // calculate the area 
+    // w x l
+    const area = multiplyInputs('rhombus-first-input', 'rhombus-second-input');
+
+    // display area to area calculation card 
+    // return if input is invalid
+    if(isNaN(area)){
+        return
+    }
+    serial += 1;
+    displayArea(serial,'Rhombus',area);
+});
