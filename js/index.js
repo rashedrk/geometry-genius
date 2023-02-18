@@ -57,9 +57,10 @@ document.getElementById('parallelogram-calculate-btn').addEventListener('click',
 // for Rhombus 
 document.getElementById('rhombus-calculate-btn').addEventListener('click', function () {
     // multiply two inputs
+    const inputMultiply = multiplyInputs('rhombus-first-input', 'rhombus-second-input');
     // calculate the area 
     // w x l
-    const areaRaw = multiplyInputs('rhombus-first-input', 'rhombus-second-input');
+    const areaRaw =  0.5 * inputMultiply;
     // fix output to two decimal number
     const area = areaRaw.toFixed(2);
     // display area to area calculation card 
