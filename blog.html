@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+</head>
+<body>
+    <h1>Document Object Model</h1>
+    <article>
+        <h3>1. What is DOM? what the purpose of DOM</h3>
+        <p>DOM means Document Object Model. it is used to interact with the web. It represents html elements as node. DOM helps to interact with the html elements or web page through javascript. we can change (add,remove) any element into web using dom. or do any action for an interaction with the website. </p>
+    </article>
+    <article>
+        <h3>2. How will you select HTML elements using DOM? Name the DOM methods.</h3>
+        <p>we can use anyof this 5 methods to select any element of HTML using DOM. </p>
+        <ul>
+            <li>querySelector()</li>
+            <li>querySelectorAll()</li>
+            <li>getElementsByTagName()</li>
+            <li>getElementsByClassName()</li>
+            <li>getElementById()</li>
+        </ul>
+    </article>
+    <article>
+        <h3>3. What is event bubble?</h3>
+        <p>when we interact with a webpage an event occurs.like- click,mouse enter,mouse out, hover etc.
+            <br>
+        when an event occurs the DOM try to catch the event. so it reaches to the node where the event occurs. after capturing the event it propagate the event to its parent elements until it reaches the root element.
+        this technique is called event bubbling.
+        <br>
+        <u>For example:</u>
+        <br>
+        if we click an li inside ul then we can see the ul is also clicked. and the container section also clicked. so the event is propagating.
+        </p>
+    </article>
+    <article>
+        <h3>4. What is a callback function and why will you use it?</h3>
+        <p>When we pass a function as an argument of another function then it is callback function. it is used to handle asynchronous operation and events. to handle user interaction with the webpage callback function can be use.</p>
+    </article>
+</body>
+</html>

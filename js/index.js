@@ -111,3 +111,8 @@ document.getElementById('ellipse-calculate-btn').addEventListener('click', funct
     serial += 1;
     displayArea(serial,'Ellipse',area);
 });
+
+// blog button click handler
+document.getElementById('blog-btn').addEventListener('click',function () {
+    window.location.href = '../blog.html'
+})
