@@ -66,3 +66,41 @@ document.getElementById('rhombus-calculate-btn').addEventListener('click', funct
     serial += 1;
     displayArea(serial,'Rhombus',area);
 });
+
+// for pentagon 
+document.getElementById('pentagon-calculate-btn').addEventListener('click', function () {
+    // multiply two inputs
+    // p x b
+    const inputMultiply = multiplyInputs('pentagon-first-input', 'pentagon-second-input');
+
+    // calculate the area 
+    // area = 0.5 x p x b
+    const area = 0.5 * inputMultiply;
+
+    // display area to area calculation card 
+    // return if input is invalid
+    if(isNaN(area)){
+        return
+    }
+    serial += 1;
+    displayArea(serial,'Pentagon',area);
+});
+
+// for Ellipse 
+document.getElementById('ellipse-calculate-btn').addEventListener('click', function () {
+    // multiply two inputs
+    // a x b
+    const inputMultiply = multiplyInputs('ellipse-first-input', 'ellipse-second-input');
+
+    // calculate the area 
+    // area = π x a x b
+    const area = 3.1416 * inputMultiply;
+
+    // display area to area calculation card 
+    // return if input is invalid
+    if(isNaN(area)){
+        return
+    }
+    serial += 1;
+    displayArea(serial,'Ellipse',area);
+});
