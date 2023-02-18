@@ -24,27 +24,115 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section class="mb-4">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-9">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <!-- Triangle  shape card-->
                         <div class="col">
-                            <div class="card text-center ">
-                                <img src="./images/triangle.png" class="card-img-top px-5 py-3" alt="">
-                                <div class="card-body pb-4 px-4">
+                            <div class="card h-100 text-center ">
+                                <div class=" px-4 py-3 h-100">
+                                    <img src="./images/triangle.png" class="card-img-top" alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
                                     <h4 class="card-title">Triangle</h4>
                                     <p class="card-text">Area (A) = 0.5 x b x h</p>
-                                    <input type="text" name="" class="input-field" id=""> <span>cm</span>
-                                    <input type="text" name="" class="input-field ms-1" id="">
+                                    <input type="text" name="" class="input-field px-2" placeholder="b" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field px-2 ms-1" placeholder="h" id="">
                                     <span>cm</span>
-                                    <button class="btn-calculate btn btn-primary w-100 mt-3">Calculate</button>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rectangle shape card -->
+                        <div class="col">
+                            <div class="card h-100 text-center ">
+                                <div class="px-4 py-3 h-100">
+                                    <img src="./images/rectangle.png" class="card-img-top " alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
+                                    <h4 class="card-title">Rectangle</h4>
+                                    <p class="card-text">Area (A) = w x l</p>
+                                    <input type="text" name="" class="input-field px-2" placeholder="w" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field ms-1 px-2" placeholder="l" id="">
+                                    <span>cm</span>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Parallelogram shape card -->
+                        <div class="col">
+                            <div class="card h-100 text-center ">
+                                <div class="px-4 py-3 h-100">
+                                    <img src="./images/parallelogram.png" class="card-img-top " alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
+                                    <h4 class="card-title">Parallelogram</h4>
+                                    <p class="card-text">Area (A) = b x h</p>
+                                    <input type="text" name="" class="input-field px-2" placeholder="b" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field ms-1 px-2" placeholder="h" id="">
+                                    <span>cm</span>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Rhombus shape card  -->
+                        <div class="col">
+                            <div class="card h-100 text-center ">
+                                <div class="px-4 py-3 h-100">
+                                    <img src="./images/rhombus.png" class="card-img-top " alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
+                                    <h4 class="card-title">Rhombus</h4>
+                                    <p class="card-text">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                                    <input type="text" name="" class="input-field px-2" placeholder="d1" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field ms-1 px-2" placeholder="d2" id="">
+                                    <span>cm</span>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pentagon shape card  -->
+                        <div class="col">
+                            <div class="card h-100 text-center ">
+                                <div class="px-4 py-3 h-100">
+                                    <img src="./images/pentagon.png" class="card-img-top " alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
+                                    <h4 class="card-title">Pentagon</h4>
+                                    <p class="card-text">Area (A) = 0.5 x p x b</p>
+                                    <input type="text" name="" class="input-field px-2" placeholder="w" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field ms-1 px-2" placeholder="l" id="">
+                                    <span>cm</span>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card h-100 text-center ">
+                                <div class="px-4 py-3 h-100">
+                                    <img src="./images/ellipse.png" class="card-img-top " alt="">
+                                </div>
+                                <div class="card-body pb-4 px-2">
+                                    <h4 class="card-title">Ellipse</h4>
+                                    <p class="card-text">Area (A) = πab</p>
+                                    <input type="text" name="" class="input-field px-2" placeholder="a" id=""> <span>cm</span>
+                                    <input type="text" name="" class="input-field ms-1 px-2" placeholder="b" id="">
+                                    <span>cm</span>
+                                    <button class="btn btn-primary w-100 mt-3">Calculate</button>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-
+                <div class="col-md-3">
+                    <!-- Area calculation card  -->
+                        <div class="card h-50 text-center  ">
+                            <div class="card-body pb-4 px-2">
+                                <h4 class="card-title"> <u>Area Calculation</u> </h4>
+                            </div>
+                        
+                    </div>
                 </div>
             </div>
         </section>
